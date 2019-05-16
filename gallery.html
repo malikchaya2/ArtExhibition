@@ -1,0 +1,572 @@
+<style>
+    .buttons{
+        border: 1px solid white; 
+        padding-top: 10px; 
+        padding-bottom: 10px; 
+        padding-right: 30px; 
+        padding-left: 30px; 
+        border-radius: 5px;
+        margin-top: 30px; 
+        
+    }
+        * {
+            padding:0px;
+            margin: 0px;
+        }
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 64px;
+            letter-spacing: 6px;
+        }
+        .container {
+            max-width: 960px;
+            margin-top: 98px auto;
+            margin-bottom: 128px auto;
+            margin-right: 128px auto;
+            margin-left: 128px auto;
+            letter-spacing: 6px;
+            text-align: center;
+        }
+        h2 {
+            letter-spacing: 6px;
+            color: #787878;
+            border-bottom: 2px solid #989898;
+            padding-bottom: 12px;
+            text-align: left;
+            margin-bottom: 32px;
+            margin-top: 64px;
+        }
+        h3 {
+            margin-top: 48px;
+        }
+        .box {
+            width: 45%;
+            display: inline-block;
+            background-color: #484848;
+            height: 348px;
+            vertical-align: top;
+            margin: 2%;
+        }
+        .box {
+            position: relative;
+        }
+        .box img {
+            width: 100%;height: 100%;
+            object-fit: fill;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+        }
+        
+        /* effect 1 */
+        .ef1 .contentPart {
+            position: absolute;
+            top: 0px;left: 0px;
+            width: 100%;height: 100%;
+            background-color: #0f305d;
+            opacity: 0;
+            transition:all 0.4s;
+        }
+        .ef1 .contentPart:hover {
+            opacity: 1;
+            top: 3%;
+            left: 4%;
+        }
+        .ef1 .contentPart p {
+            color: #fff;
+            letter-spacing: 0px;
+            margin-top: 32px;
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+        .ef1 .contentPart a {
+            color: #fff;
+            letter-spacing: 0px;
+            font-size: 18px;
+        }
+        .ef2 text{
+            color: red; 
+            font-weight: 700; 
+            font-size: 30px; 
+        }
+        .TEXT{
+ 
+            color: red; 
+            font-weight: 700; 
+            font-size: 30px; 
+ 
+        }
+        /* effect 2 */
+        .ef2 {
+            overflow: hidden;
+            color: red; 
+        }
+        .ef2 .contentPart {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 50%;
+            height: 100%;
+            background-color: #0f305d;
+            opacity: 1;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transform: rotateY(-90deg);
+            -webkit-transform: rotateY(-90deg);
+            -moz-transform: rotateY(-90deg);
+            -webkit-transform-origin: 0 0;
+            -moz-transform-origin: 0 0;
+            transform-origin: 0 0;
+        }
+        .ef2:hover .contentPart {
+            transform: rotateY(0deg);
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+        }
+        .ef2:hover img {
+            transform: translateX(50%);
+            -webkit-transform: translateX(50%);
+            -moz-transform: translateX(50%);
+        }
+        .ef2 .contentPart p {
+            color: #fff;
+            letter-spacing: 0px;
+            margin-top: 32px;
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+        .ef2 .contentPart a {
+            color: #fff;
+            letter-spacing: 0px;
+            font-size: 18px;
+        }
+        
+        /* effect 3 */
+        .ef3 .contentPart {
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 28%;
+            bottom: 0px;
+            background-color: #0f305d;
+            opacity: 1;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+        }
+        .ef3 .contentPart p {
+            display: inline-block;
+        }
+        .ef3 img {
+            position: relative;
+            z-index: 100;
+        }
+        .ef3:hover img {
+            bottom: 28%;
+        }
+        .ef3 .contentPart p {
+            color: #fff;
+            letter-spacing: 0px;
+            margin-top: 32px;
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+        .ef3 .contentPart a {
+            color: #fff;
+            letter-spacing: 0px;
+            font-size: 18px;
+        }
+        
+        /* effect 4 */
+        .ef4 .contentPart {
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            bottom: 0px;
+            background-color: #0f305d;
+            opacity: 1;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+        }
+        .ef4 .contentPart p {
+            display: inline-block;
+        }
+        .ef4 img {
+            position: relative;
+            z-index: 100;
+        }
+        .ef4:hover img {
+            -webkit-transform: scale(0.5) translateY(40%);
+            -moz-transform: scale(0.5) translateY(40%);
+            transform: scale(0.5) translateY(40%);
+        }
+        .ef4 .contentPart p {
+            color: #fff;
+            letter-spacing: 0px;
+            margin-top: 32px;
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+        .ef4 .contentPart a {
+            color: #fff;
+            letter-spacing: 0px;
+            font-size: 18px;
+        }
+        
+        /* Media Querys */
+        
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            .box {
+                width: 95%;
+            }
+        }
+
+        .copy{
+            color: #fff;
+            letter-spacing: 0px;
+            font-size: 18px;
+            padding-right: 10px; 
+        }
+        .copy a{
+            text-decoration: underline;
+        }
+        .copy2{
+            color: darkblue;
+            letter-spacing: 0px;
+            font-size: 18px;
+            padding-right: 10px; 
+        }
+        .copy2 a{
+            text-decoration: underline;
+        }
+        .copy3{
+            color: black;
+            letter-spacing: 0px;
+            font-size: 15px;
+            padding-right: 10px; 
+            font-weight: 600;
+        }
+        .copy3 a{
+            text-decoration: underline;
+        }
+        .copy3{
+            color: grey;
+            letter-spacing: 0px;
+            font-size: 15px;
+            padding-right: 10px; 
+            font-weight: 600;
+        }
+        .copy3 a{
+            text-decoration: underline;
+        }
+        </style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gallery</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+	<link rel="stylesheet" href="./dist/css/roganolazy.css">
+	<style>
+		body{
+			align-items: center;
+			background: #f1f1f1;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			/* padding: 40px 0; */
+			width: 100vw;
+		}
+		img{
+            display: block;
+            min-height: 100px;
+			height: auto;
+			margin-bottom: 40px;
+			width: 500px;
+		}
+
+      .space{
+          margin-top: 50px; 
+      }  
+      .fa-creative-commons-pd{
+          color: white; 
+          padding-top: 30px; 
+      }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+	<!-- <img data-src="img/01.png" src="img/x.png" class="lazy-framework lazy-shadow lazy-broken" alt="Image 01" data-broken="unlink">
+	<img data-src="img/02.png" src="img/02.png" class="lazy-framework lazy-shadow lazy-broken" alt="Image 02" data-broken="unlink">
+	<img class="rogano-lazy lazy-framework lazy-shadow lazy-folder" data-src="http://placerabbit.com/470/896/" src="http://placerabbit.com/470/896/" alt="Image 03">
+	<img class="rogano-lazy lazy-framework lazy-shadow lazy-folder" data-src="img/04.jpg" src="img/04-blur.jpg" alt="Image 04">
+	<img class="rogano-lazy lazy-framework lazy-shadow lazy-folder" data-src="img/05.png" src="img/05-blur.jpg" alt="Image 05">
+	<img class="rogano-lazy lazy-framework lazy-shadow lazy-folder" data-src="img/06.png" src="img/06-blur.jpg" alt="Image 06">
+	<img class="rogano-lazy lazy-framework lazy-shadow lazy-folder" data-src="img/07.png" src="img/07-blur.jpg" alt="Image 07">
+	<img class="rogano-lazy lazy-framework lazy-shadow lazy-folder" data-src="img/08.jpg" src="img/08-blur.jpg" alt="Image 08">
+	<img class="rogano-lazy lazy-framework lazy-shadow lazy-folder" data-src="img/09.jpg" src="img/09-blur.jpg" alt="Image 09">
+	<img class="rogano-lazy lazy-framework lazy-shadow lazy-folder" data-src="img/10.jpg" src="img/10-blur.jpg" alt="Image 10">
+	<img class="rogano-lazy lazy-framework lazy-shadow lazy-folder" data-src="img/11.png" src="img/11-blur.jpg" alt="Image 11"> -->
+    <!-- <script src="./dist/js/roganolazy.js"></script> -->
+
+<div class="space"></div>
+    <h1>Gallery</h1>
+   
+    <div class="space"></div> 
+<div class="container">
+    <!-- <h2>Effect 2</h2> -->
+    <div class="box ef2">
+            <div style="position:relative;z-index:0;width:510px">
+                    <img class="rogano-lazy   lazy-shadow lazy-folder" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Jerus-n4i.jpg/1280px-Jerus-n4i.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Jerus-n4i.jpg/1280px-Jerus-n4i.jpg" alt="Image 06">
+            
+              <div style="position:absolute;z-index:1;right:0;bottom:0">
+                    <div class="copy">
+                            <i class="fab fa-creative-commons-pd"></i>
+                            <a class="mw-mmv-license copy2" href="https://commons.wikimedia.org/wiki/File:Jerus-n4i.jpg" target="">Public Domain</a>
+            
+                        </div>
+              </div>
+            </div>
+
+        <div class="contentPart">
+            <p>
+           Second Temple</p>
+            <a class= "buttons" href="ind/ind.1.html">View</a>
+        </div>
+    </div>
+    
+    <div class="box ef2">
+            <div style="position:relative;z-index:0;width:510px">
+                    <img class="rogano-lazy   lazy-shadow lazy-folder" data-src="https://upload.wikimedia.org/wikipedia/commons/7/73/V10p158001_Prague.jpg" src="https://upload.wikimedia.org/wikipedia/commons/7/73/V10p158001_Prague.jpg" alt="Image 10">
+            
+              <div style="position:absolute;z-index:1;right:0;bottom:0">
+                    <div class="copy">
+                            <i class="fab fa-creative-commons-pd"></i>
+                            <a class="copy mw-mmv-license" href="https://commons.wikimedia.org/wiki/File:V10p158001_Prague.jpg" target="">Public Domain</a>
+            
+                        </div>
+              </div>
+            </div>
+
+
+         
+        <div class="contentPart">
+            <p> The Middle Ages</p>
+             <p> Gothic Archetecture</p>  
+             <p>Altneuschul</p>    
+                    
+            <a  class= "buttons" href="ind/ind.2.html"> View</a>
+           
+        </div>
+    </div>
+    <div class="box ef2">
+            <img class="rogano-lazy   lazy-shadow lazy-folder" data-src="img/text.png" src="img/text.png" alt="Image 10">
+            
+        <div class="contentPart">
+            <p>Read about  </p>
+            <p>The Shape Of the Luchot </p>
+            <a  class= "buttons" href="text1.html">Read</a>
+        </div>
+    </div>
+
+    <div class="box ef2">
+            <div style="position:relative;z-index:0;width:510px">
+                    <img class="rogano-lazy   lazy-shadow lazy-folder" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Loggia_di_raffaello%2C_09%2C_04.jpg/1024px-Loggia_di_raffaello%2C_09%2C_04.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Loggia_di_raffaello%2C_09%2C_04.jpg/1024px-Loggia_di_raffaello%2C_09%2C_04.jpg" alt="Image 10">
+            
+            
+              <div style="position:absolute;z-index:1;right:0;bottom:0">
+                    <div class="copy">
+                            <i class="fab fa-creative-commons-pd"></i>
+                             <a class="mw-mmv-license copy" href="https://commons.wikimedia.org/wiki/File:Loggia_di_raffaello,_09,_04.jpg" target="">Public Domain</a>
+            
+                        </div>
+        
+              </div>
+            </div>
+
+
+          
+        <div class="contentPart">
+            <p>Renaissance </p>
+            <p>Raphael</p>
+            <a  class= "buttons" href="ind/ind.3.html"> View</a>
+
+          
+           
+        </div>
+    </div>
+
+
+   
+	<!-- Row 2 -->
+<!-- <h2>Effect 2</h2> -->
+
+        <div class="box ef2">
+                <div style="position:relative;z-index:0;width:510px">
+                        <img class="rogano-lazy   lazy-shadow lazy-folder" data-src="https://upload.wikimedia.org/wikipedia/commons/8/84/Aminadab_a.jpg" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Aminadab_a.jpg" alt="Image 06">
+                  <div style="position:absolute;z-index:1;right:0;bottom:0">
+                        <div class="copy">
+                                <i class="fab fa-creative-commons-pd"></i>
+                                <a class="mw-mmv-license copy" href="https://commons.wikimedia.org/wiki/File:Aminadab_a.jpg" target="">Public Domain</a>
+                
+                            </div>
+            
+                  </div>
+                </div>
+
+            <div class="contentPart">
+                <p>Renaissance 2 </p>
+                <p>Michelangelo</p>
+                <a  class= "buttons" href="ind/ind.4.html"> View</a>
+           
+            </div>
+        </div>
+
+
+ 
+        <div class="box ef2">
+            <div style="position:relative;z-index:0;width:510px">
+                    <img class="rogano-lazy   lazy-shadow lazy-folder" data-src="https://upload.wikimedia.org/wikipedia/commons/1/15/The_Fountain_of_Life_after_van_Eyck_8.jpg" src="https://upload.wikimedia.org/wikipedia/commons/1/15/The_Fountain_of_Life_after_van_Eyck_8.jpg" alt="Image 10">
+
+            <div style="position:absolute;z-index:1;right:0;bottom:0">
+                    <div class="copy" style="text-align: right; padding-right: 10px; ">
+                            <i class="fab fa-creative-commons-pd"></i>
+                            <a class="copy mw-mmv-license" href="https://commons.wikimedia.org/wiki/File:The_Fountain_of_Life_after_van_Eyck_8.jpg" target="">Public Domain</a>
+                    </div>
+            </div>
+            </div>
+                                
+            
+                   
+                <div class="contentPart">
+                    <p>Northern Renaissance </p> <p>Jan van Eyck</p>
+                    <a  class= "buttons" href="ind/ind.5.html"> View</a>
+                    
+                </div>
+         </div>
+         
+ 
+   
+<!-- row 3 -->
+    <!-- <h2>Effect 2</h2> -->
+    <div class="box ef2">
+
+            <div style="position:relative;z-index:0;width:510px">
+                    <img class="rogano-lazy   lazy-shadow lazy-folder" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Rembrandt_Harmensz._van_Rijn_079.jpg/800px-Rembrandt_Harmensz._van_Rijn_079.jpg" alt="Image 06">
+           
+            <div style="position:absolute;z-index:1;right:0;bottom:0">
+                    <div class="copy">
+                            <i class="fab fa-creative-commons-pd"></i>
+                            <a class="mw-mmv-license copy" href="https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_079.jpg" target="">Public Domain</a>
+            
+                        </div>
+            </div>
+            </div>
+
+          
+        <div class="contentPart">
+            <p>Dutch Golden Age</p>
+            <p>Rembrandt van Rijn</p></p>
+            <a  class= "buttons" href="ind/ind.6.html"> View</a>
+
+       
+        </div>
+    </div>
+    <div class="box ef2">
+
+        
+            <div style="position:relative;z-index:0;width:510px">
+                    <img class="rogano-lazy   lazy-shadow lazy-folder" data-src="https://www.britishmuseum.org/collectionimages/AN00735/AN00735167_001_m.jpg" src="https://www.britishmuseum.org/collectionimages/AN00735/AN00735167_001_m.jpg" alt="Image 10">
+           
+            <div style="position:absolute;z-index:1;right:0;bottom:0">
+                    <div class="copy3">
+                        <div class="copy">Creative Commons </div>
+                            
+
+                            <a class="copy4" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike
+                                4.0 International</a>
+                                <div class="copy4">(CC BY-NC-SA 4.0)</div>
+                               
+                            <a class="mw-mmv-license copy4" href="https://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=723738&partId=1&museumno=1862,0712.187&page=1" target="">The British Museum </a>
+            
+                        </div>
+            </div>
+            </div>
+
+
+           
+        <div class="contentPart">
+            <p>Impressionism </p>
+                <p> Goya </p>
+            <a  class= "buttons" href="ind/ind.7.html"> View</a>
+        </div>
+    </div>
+
+	<!-- Row 4 -->
+<!-- <h2>Effect 2</h2> -->
+	<div class="box ef2">
+            <div style="position:relative;z-index:0;width:510px">
+                    <img class="rogano-lazy   lazy-shadow lazy-folder" data-src="https://upload.wikimedia.org/wikipedia/commons/6/68/Self_Portrait_with_Seven_Fingers.jpg" src="https://upload.wikimedia.org/wikipedia/commons/6/68/Self_Portrait_with_Seven_Fingers.jpg" alt="Image 06">
+
+            <div style="position:absolute;z-index:1;right:0;bottom:0">
+                    <div class="copy">
+                            <i class="fab fa-creative-commons-pd"></i>
+                            <a class="mw-mmv-license copy" href="https://commons.wikimedia.org/wiki/File:Self_Portrait_with_Seven_Fingers.jpg" target="">Public Domain</a>
+                    </div>
+            </div>
+            </div>
+
+           
+		<div class="contentPart">
+            <p>Cubism</p>
+            <p>Marc Chagall</p>
+            <a  class= "buttons" href="ind/ind.8.html"> View</a>
+            
+         
+		</div>
+    </div>
+    
+
+    <div class="box ef2">
+            <img class="rogano-lazy   lazy-shadow lazy-folder" data-src="img/text2.jpg" src="img/text2.jpg" alt="Image 10">
+            
+        <div class="contentPart">
+            <p>Read about  </p>
+            <p>Representation of Jews in Christian Art </p>
+            <a  class= "buttons" href="text2.html">Read</a>
+        </div>
+    </div>
+
+<div class="container">
+        <div class="space"></div>
+        <div class="row">
+            <div class="space"></div>
+            <!-- <div class="col-2 mx-auto"><button type="button" class="btn btn-outline-dark btn-block">Text Version</button></div> -->
+                <!-- <div class="col-2 mx-auto"><button type="button" class="btn btn-outline-dark btn-block">Footnotes</button></div> -->
+                <div class="col-5 mx-auto"><button type="button" class="btn btn-outline-dark btn-block" onclick="window.location.href = 'https://drive.google.com/file/d/1IjApj36cNQEXP0SiZ90B3S1az_Ty1PiX/view?usp=sharing' ">Bibliography</button></div>
+                <div class="space"></div>
+            </div>
+            <div class="space"></div>
+</div>
+    
+
+    <script src="./dist/js/lazy-roga.min.js"></script>
+	<script>
+        // Document.ready like with vanilla js
+        document.addEventListener('DOMContentLoaded', function(){
+            let _lazy = new Lazy();
+        });
+	</script>
+</body>
+</html>

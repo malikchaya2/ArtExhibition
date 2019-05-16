@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Art </title>
+    <style>
+ /* MENU      */
+ /* https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay2 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  /* background-color: rgb(73,116,162, 0.2); */
+  /* background-color: rgba(189,255,237,0.3); */
+  background-color: rgba(240,255,251, 0.7);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/* /MENU */
+
+#myVideo {
+  position: fixed;
+ 
+  min-width: 150%; 
+  min-height: 150%;
+
+  
+}
+.over{
+  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+
+
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+
+.zz{
+    /* margin-top: 5%;  */
+    margin-left: 0px; 
+    margin-right: 0px; 
+    height: 90%; /* For 100% screen height */
+    width:  100%; /* For 100% screen width */
+}
+
+.counter{
+   
+    font-weight: 700;
+    font-size: 60px; 
+    /* text-align: center; */
+    /* color:  #bd8c7d; */
+    color: #868986;
+    /* color: #4ABDAC; */
+    /* text-shadow: -1px 0 #fee596, 0 1px #fee596, 1px 0 #fee596, 0 -1px #fee596; */
+}
+.counterI{
+  /* text-align: center; */
+  font-weight: 700;
+    font-size: 25px; 
+    font-style: italic;
+    /* text-align: center; */
+    /* color:  #bd8c7d; */
+    color: #868986;
+    /* color: #4ABDAC */
+    /* text-shadow: -1px 0 #fee596, 0 1px #fee596, 1px 0 #fee596, 0 -1px #fee596; */
+
+}
+
+.counter2{
+    font-weight: 500;
+    font-size: 18px; 
+    text-align: justify;
+
+    /* color: #3d3d3f;  */
+    color: #868986; 
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+
+}
+    body { 
+    background: url("img/x.jpg") no-repeat center center fixed; 
+    background-size: cover; 
+    margin: 0;   
+  }
+    /* body{
+            background: #0b0c10; 
+            margin: 0; 
+    } */
+    .d{
+      font-size: 100px; 
+
+
+    }
+     .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #c5c6c7 ;
+    border-color: #c5c6c7 ;
+    /* color: red ;  */
+}
+.badge-primary, .btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color:    #868986;
+    border-color:#868986;;
+    /* color: #1f2833; */
+    color: white; 
+    font-weight: 500;
+}
+input[type=range]::-webkit-slider-thumb {
+    
+     
+     box-shadow:
+        inset 0 0 16px  #330033,
+        inset 16px 0 20px  #330033;
+    
+}
+.overz{
+  z-index: 2;
+}
+    </style>
+    
+  </head>
+  <!-- <video autoplay muted loop >
+        <source src="wave.mov" type="video/mov">
+        Your browser does not support HTML5 video.
+      </video> -->
+  <body class="text-white">
+        
+       
+    
+          <video autoplay muted loop id="myVideo">
+              <source src="img/gg.mp4" type="video/mp4" style="height: 100%">
+            </video>
+      <div class="container-fluid   border over">
+      
+      
+          <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="index.html">Introduction</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="text1.html">Text 1</a>
+                <a href="text2.html">Text 2</a>
+              </div>
+            </div>
+            <!-- <div class="col-md-12  text-right align-self-right"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></div> -->
+          <div class="row text-left ml-0 ">
+            
+              <div id="myNav2" class="overlay2"> </div>
+           
+              <div class="col-md-6 zz overz  align-self-left">
+                  
+                  
+                <div>
+                    
+                    <div class="counter" id = "welcome">If Jesus Was A Jew</div>
+                    <div class="counterI" id = "welcome"> Imagining A Columbia Arthum Curriculum featuring Masterpieces of Jewish Art 
+                      </div>
+                   
+                   
+                    <div class="counter2 pb-3 mt-3" id = "welcome">
+                      <p>Masterpieces of Western Art, also known as Arthum has been part of  the core curriculum at Columbia University since 1947<sup>1</sup>. According to the Columbia College description of the course, it “teaches students how to look at, think about, and engage in critical discussion of the visual arts”. The course also comes with a disclaimer of it being “not a historical survey, but an analytical study of a limited number of monuments and artists”. Students taking this required class quickly realize that the vast majority of the selected masterpieces is painted by Christian artists, depict Christian scenes, and require an understanding of the fundamental principles of Christianity in order to engage with the narrative of art pieces.</p>  
+ 
+                      <p>The argument can be made that the objective of the class is to teach students how to critically approach and analyze any art object. In that case the religion associated with the art shouldn’t be of any significance. However, if one aims to study art, focusing only on the  “formal analysis” such as “stylistic, iconographical analysis”, as quoted in “The Study of Art in a Cultural Context” by F. Graeme Chalmers, one runs the risk of treating the art “as an isolated object, as if the social setting for which it is created and in which it is presented were merely accidental”<sup>2 </sup>.   If a more robust understanding of the work is desired, an understanding of its historical and cultural context is critical. As such, the religion and ideology behind the masterpiece becomes crucial to its structure.   </p> 
+                           
+                      <p>The reason why Christianity is the base religion of the masterpieces shown in Arthum, is not because Columbia University has an affinity towards Christianity. Alternatively, as Bruce Chilton explains in the book “Religious Foundations of Western Civilization”, ever since the Roman emperor Constantine converted to, and “established Christianity as the governing ideology of the West”, Christianity has been the pre-eminent religion of the West, and put Christianity into a dominant position of influence <sup>3 </sup>. So much so that “Constantine’s conversion meant that the values embodied in Christianity’s emergence became the values of Western civilization”<sup>4 </sup>. This is still echoed today, even in states that have established a separation of Church and State<sup>5 </sup>.   </p>
+                           
+                      <p>However, despite Christianity being the historically dominant Western Religion, it is Judaism that provided the “religious vocabulary”<sup>6 </sup>  to Jesus and his movement. Additionally, the Jews were ever present, despite having largely been considered a nuisance to be expelled, segregated, or at the very least tolerated. The question that remains is, was their presence influential enough to be visible through the arts?   </p>
+                           
+                      <p>Even if the answer is found to be in the affirmative, why should anybody care to study art through a Jewish Narrative? The current Christian dominant curriculum is perfectly Western and perfectly masterful. Christianity is the dominant religion, at the bases of Western civilization, and one can gain an understanding and appreciation of Western art without any alterations to the syllabus. However, a piece of art tells a narrative, and a collection of art, tells a story. For hundreds of years, the Jews have been separated and sidelined from the  story - in practice and as portrayed, despite their prominent existence within it. The question to be considered is, which story do we want to tell to the generations of Columbia University students? Do we want to tell the story through the prejudiced prism of the leaders at the time, and as told for hundreds of years, a story in which the Jews were not even considered worthy of mention? Or do we want to expand the margins, and tell the full story? This exhibition shows that should a more inclusive syllabus be desired, the content is available, so much so that one can even create an entire syllabus of Jewish based art alone.    </p>
+                           
+                          
+                       
+
+                    </div>
+                   
+                      <button class="btn btn-secondary btn-lg btn-block " onclick="window.location.href = 'gallery.html'" >Enter Exhibition </botton>
+                      
+                </div>
+
+                <div class="row mt-5 pt-5">
+                    <span style="color:silver">[1]https://arthum.college.columbia.edu/</span>
+                    <span style="color:silver">[2] Chalmers, F. Graeme. "The Study of Art in a Cultural Context." The Journal of Aesthetics and Art Criticism 32, no. 2 (1973): 249-56. doi:10.2307/429042., page 251 https://www.jstor.org/stable/429042?seq=1#metadata_info_tab_contents 
+
+                      </span>
+                    <span style="color:silver">[3] Bruce Chilton, “Christianity: What It Is And How it Defines Western Civilization, in  Religious Foundations of Western Civilization, Neusner, Jacob. Nashville: Abingdo,  71. 
+                      </span>
+                    <span style="color:silver">[4]Bruce Chilton, “Christianity: What It Is And How it Defines Western Civilization, in  Religious Foundations of Western Civilization, Neusner, Jacob. Nashville: Abingdo,  102
+                      </span>
+                    <span style="color:silver">[5]Ibid</span>
+                    <span style="color:silver">[6]Ibid</span>
+                 </div>
+              </div>
+                  <br>
+              </div>
+              <div class="col-md-2 z  ">
+                <div>
+                   
+                </div>
+                  <br>
+              </div>
+              <div class="col-md-4   zz  align-self-left ">
+                <div>
+                   
+                </div>
+                  <br>
+              </div>
+      
+      
+           
+          </div>
+      </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

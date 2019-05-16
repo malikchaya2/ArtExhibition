@@ -1,0 +1,5 @@
+This project uses the rogano-lazy js library   info: https://github.com/roganoalien/rogano-lazy
+
+This project uses Caption hover effect by Mahdi A.Alinejad
+
+https://www.cssscript.com/4-cool-image-caption-hover-effects/
