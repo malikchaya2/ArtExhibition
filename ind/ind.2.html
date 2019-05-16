@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+ <title>Image</title>
+ <style>
+:root {  --X-imagen: 5%;
+ --Y-imagen:0%;
+}
+
+* {
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+}
+
+body { background-color: #fafafa; }
+
+.container {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+
+h1 {
+  font-weight: 200;
+  font-family: 'Roboto';
+  color: #444;
+  margin-bottom: 50px;
+}
+
+p {
+  font-family: 'Roboto';
+  color: #777;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.image-wrapper {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.clear_fix {
+  position: relative;
+  float: left;
+  width: 100% !important;
+}
+
+div[data-shx-size='1'] {  --Y-imagen:10%;
+}
+
+div[data-shx-size='1']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+}
+
+div[data-shx-size='2'] { margin-bottom: 12px !important; --Y-imagen:12%;
+}
+
+div[data-shx-size='2']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+}
+
+div[data-shx-size='3'] { margin-bottom: 17px !important; --Y-imagen:13%;
+}
+
+div[data-shx-size='3']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(25px);
+  filter: blur(25px);
+}
+
+div[data-shx-size='4'] { margin-bottom: 20px !important; --Y-imagen:18px;
+}
+
+div[data-shx-size='4']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+
+div[data-shx-size='5'] { margin-bottom: 28px !important; --Y-imagen:26px;
+}
+
+div[data-shx-size='5']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(32px);
+  filter: blur(30px);
+}
+
+div[data-shx-size='6'] { margin-bottom: 42px !important;  --Y-imagen:40px;
+}
+
+div[data-shx-size='6']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+}
+
+.image-wrapper img {
+  width: 100%;
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.image-wrapper > div {
+  position: relative;
+  width: 500px;
+  margin: 10% auto;
+  margin-top: 0px;
+}
+.fa-bars{
+  padding-top: 20px; 
+  padding-right: 20px; 
+  z-index: 20;
+}
+.fa-arrow-left{
+  padding-top: 20px; 
+  padding-left: 20px; 
+  z-index: 20;
+}
+.menIcon{
+    font-size: 40px; 
+    color: grey; 
+  }
+
+</style>
+ </head>
+
+ <body>
+ <!-- <div id="css-script-menu">
+  <div class="css-script-center"> -->
+    <!-- <ul>
+      <li><a href="http://www.cssscript.com/interactive-image-shadow-perspective-effects-js-css/">Download</a></li>
+      <li><a href="http://www.cssscript.com/">Back To CSS Script</a></li>
+    </ul> -->
+    
+
+
+
+<div class="container">
+    <div class="row">
+        <h1> Gothic Architecture - Altneuschul </h1>
+</div>
+ 
+    <div class="row">
+        <div class="col-6">
+
+       
+            
+                <div class="image-wrapper">
+                        <div class="my-image im"  onmousemove="relMouseCoords(event,this)" data-shx-img="https://live.staticflickr.com/1579/26635786616_dbf1e765de_z.jpg" data-shx-size="1" > <img src="https://live.staticflickr.com/1579/26635786616_dbf1e765de_z.jpg" class="imagen_ejemplo" alt="" /> </div>
+
+
+                        <!-- <a data-flickr-embed="true"  href="https://www.flickr.com/photos/chajms/26635786616/" title="Waiting for Ma&#x27;ariv in the Alt-Neushul #maariv #prague #praha #prag #altneuschul #staronovasynagoga #synagogue #synagoge #passover #pessach #פראג"><img src="https://live.staticflickr.com/1579/26635786616_dbf1e765de_z.jpg" width="640" height="640" alt="Waiting for Ma&#x27;ariv in the Alt-Neushul #maariv #prague #praha #prag #altneuschul #staronovasynagoga #synagogue #synagoge #passover #pessach #פראג"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> -->
+
+                      </div>
+                      <div class="paragraph" data-perseus-paragraph-index="0"><div class="paragraph"> (photo: <a target="_blank" rel="noopener noreferrer" tabindex="0" href="https://flic.kr/p/GzHnoh" class="_8gcxk83">Chajm Guski<span class="sr-only">(Opens in a new window)</span><span class="sr-only">(Opens in a new window)</span><span class="sr-only">(Opens in a new window)</span></a>, CC BY-SA 2.0)</div></div>
+           
+        </div>
+        <div class="col-6 mb-5">
+            <br>
+            <br>
+ 
+
+                <p> View with <em>bimah</em> at left, Altneushul, Prague, c. 1270, Prague <a href="https://www.flickr.com/photos/chajms/26635786616/">[more]</a> 
+                
+                  
+                </p>
+                The Altneuschul - Old New Synagogue - is located in what used to be the heart of the Jewish quarter in Prague.  As a result of discrimination against Jews that excluded them from guilds of the building crafts, Jews were not able to design or build their own synagogues. Therefore, the Altneuschul, both the original construction and the later expansion, was apparently designed and built by Christians. Considering the ornamental details found in the synagogue, the architect is assumed to be Roman Catholic. However, unlike Roman Catholic Churches, the Altneuschul has only plant decorations, and not images of humans. The Synagogue contains six bays in two aisles, each aisle containing 3 bays. In the center of the building, on the east-west axis, stand two octagonal pillars, and the Bimah- a low platform on which the Torah Scrolls are read- stands between them <sup>16 </sup>.
+                <br>
+                <br>
+                <div class="row mt-5">
+                    <div class="col-md-6  text-left align-self-left"><span class = "men" id="backbutton"  onclick="window.location.href = 'ind.1.html'">
+                      <span class="menIcon" id = "backIcon">
+                              <i class="fa fa-angle-left "></i>
+                            </span>
+                        
+                          
+                   </span></div>
+                  <div class="col-md-6  text-right align-self-right"><span class = "men"  onclick="window.location.href = 'ind.3.html'">
+                      <span class=" menIcon" id = "menIcon">
+                              <i class="fa fa-angle-right"></i>
+                            </span>
+                        
+                      
+                   </span></div>
+
+                   <div class="row mt-5">
+                      <span style="color:silver">[16]"Altneushul, Prague," Khan Academy, , accessed May 16, 2019, https://www.khanacademy.org/humanities/ancient-art-civilizations/judaism-art/a/altneushul-prague.</span>
+                      <span style="color:silver"></span>
+                      <span style="color:silver"></span>
+                      <span style="color:silver"></span>
+                   </div>
+                </div>
+        </div>
+
+    </div>
+
+  
+   <p></p>
+  
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  window.onload = function () {
+var k = '',show ='' ;
+   var x = document.createElement("STYLE");
+var imgs = document.querySelectorAll('.image-wrapper > div');
+var imgs_int = document.querySelectorAll('.image-wrapper > div > img')[0];
+   for (var i =0;  i < imgs.length; i++) {
+var show = imgs[i].getAttribute("data-shx-img");
+ 
+k += "."+imgs[i].className+":after  { background-image:url('"+show+"'); left:var(--imagen-X);     position: absolute;    display: block;    z-index: -1;    width: 90%;   height: 90%;  content: '';      background-size: 200% 80%;    background-position: 0% 100%;     } "  ;   
+
+   };
+    var t = document.createTextNode(k);
+    x.appendChild(t);
+    document.head.appendChild(x);
+      }
+
+  function relMouseCoords(event,el){
+    var totalOffsetX = 0;
+    var totalOffsetY = 0;
+    var canvasX = 0;
+    var canvasY = 0;
+    var currentElement = el;
+
+    do{
+        totalOffsetX += currentElement.offsetLeft - currentElement.scrollLeft;
+        totalOffsetY += currentElement.offsetTop - currentElement.scrollTop;
+    }
+    while(currentElement = currentElement.offsetParent)
+
+    canvasX = event.pageX - totalOffsetX;
+    canvasY = event.pageY - totalOffsetY;
+el.style.transform = " perspective( 600px ) rotateX("+((canvasY*-1)+((canvasY+5)/1.02))+"deg )  rotateY("+(canvasX-(canvasX/1.02))+"deg ) ";  
+  
+el.style.setProperty('--imagen-X', ((canvasX*-1)+((canvasX+10)/1.02))+"%");
+    el.style.setProperty('--Y-imagen', ((canvasY*-1)+((canvasY+20)/1.04))+"%");
+ }
+  
+  
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

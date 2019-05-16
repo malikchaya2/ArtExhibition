@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+ <title>Image</title>
+ <style>
+:root {  --X-imagen: 5%;
+ --Y-imagen:0%;
+}
+.space{
+  margin-top: 150px; 
+}
+.space2{
+  margin-top: 100px; 
+}
+
+* {
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+}
+
+body { background-color: #fafafa; }
+
+.container {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+
+h1 {
+  font-weight: 200;
+  font-family: 'Roboto';
+  color: #444;
+  margin-bottom: 50px;
+}
+
+p {
+  font-family: 'Roboto';
+  color: #777;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.image-wrapper {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.clear_fix {
+  position: relative;
+  float: left;
+  width: 100% !important;
+}
+
+div[data-shx-size='1'] {  --Y-imagen:10%;
+}
+
+div[data-shx-size='1']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+}
+
+div[data-shx-size='2'] { margin-bottom: 12px !important; --Y-imagen:12%;
+}
+
+div[data-shx-size='2']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+}
+
+div[data-shx-size='3'] { margin-bottom: 17px !important; --Y-imagen:13%;
+}
+
+div[data-shx-size='3']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(25px);
+  filter: blur(25px);
+}
+
+div[data-shx-size='4'] { margin-bottom: 20px !important; --Y-imagen:18px;
+}
+
+div[data-shx-size='4']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+
+div[data-shx-size='5'] { margin-bottom: 28px !important; --Y-imagen:26px;
+}
+
+div[data-shx-size='5']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(32px);
+  filter: blur(30px);
+}
+
+div[data-shx-size='6'] { margin-bottom: 42px !important;  --Y-imagen:40px;
+}
+
+div[data-shx-size='6']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+}
+
+.image-wrapper img {
+  width: 100%;
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.image-wrapper > div {
+  position: relative;
+  width: 500px;
+  margin: 10% auto;
+  margin-top: 0px;
+}
+.fa-bars{
+  padding-top: 20px; 
+  padding-right: 20px; 
+  z-index: 20;
+}
+.fa-arrow-left{
+  padding-top: 20px; 
+  padding-left: 20px; 
+  z-index: 20;
+}
+.menIcon{
+    font-size: 40px; 
+    color: grey; 
+  }
+
+</style>
+ </head>
+
+ <body>
+ <!-- <div id="css-script-menu">
+  <div class="css-script-center"> -->
+    <!-- <ul>
+      <li><a href="http://www.cssscript.com/interactive-image-shadow-perspective-effects-js-css/">Download</a></li>
+      <li><a href="http://www.cssscript.com/">Back To CSS Script</a></li>
+    </ul> -->
+    
+
+
+
+<div class="container">
+    
+    <div class="row">
+        <div class="col-6">
+          
+                <div class="image-wrapper">
+                        <div class="my-image"  onmousemove="relMouseCoords(event,this)" data-shx-img="https://upload.wikimedia.org/wikipedia/commons/6/68/Self_Portrait_with_Seven_Fingers.jpg" data-shx-size="6" > <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Self_Portrait_with_Seven_Fingers.jpg" class="imagen_ejemplo" alt="" /> </div>
+                        <div class="copy">
+                            <i class="fab fa-creative-commons-pd"></i>
+                            <a class="mw-mmv-license" href="https://commons.wikimedia.org/wiki/File:Self_Portrait_with_Seven_Fingers.jpg" target="">Public Domain</a>
+                    </div>
+
+                      </div>
+           
+        </div>
+        <div class="col-6 mb-5">
+            
+
+            <div class="row mt-5">
+              <br><br>  <br><br>   <br><br>
+                <h1> Cubism - Marc Chagall </h1>
+            </div>
+                <p> Marc Chagall, Self portrait with Seven Fingers, 1911-1913  <a href="https://commons.wikimedia.org/wiki/File:Self_Portrait_with_Seven_Fingers.jpg">[more]</a> </p>
+                
+                Self Portrait with Seven Fingers was painted by Marc Chagall while living in Paris, at the age of 25 <sup>32</sup> in 1913, six years after Picasso’s Demoiselles. Chagall was born and raised in a devoutly Jewish family in Russia<sup>33</sup>. He employs the artistic theme of Cubism, representing objects as geometric shapes, as if reality was broken apart into pieces and then reassembled in new ways. Yet, in a brilliant combination of both cubism and portraiture, Chagall manages to communicate both his likeness, and what he stands for as a human being. He shows his love for Paris, with the Eiffel Tower in the window, while also showing his Russian past, by depicting his hometown of Vitebsk in a cloud over his head <sup>34</sup>. Chagall also includes many displays of his Jewish heritage. He is shown with seven fingers, in reference to a Yiddish folk expression מיט אַלע זיבן פינגער,<sup>35</sup> (with all seven fingers,)  which means "working as fast and as hard as possible" <sup>36</sup> <sup>37</sup> , and includes the Hebrew words פארי (paris) and ראסייע (Russia). In doing so he successfully combines Jewish Tradition and belief with styles of modernist art. 
+
+                <div class="space2"></div>
+                <div class="row">
+                  
+                   
+
+                    <div class="col-md-6  text-left align-self-left"><span class = "men" id="backbutton"  onclick="window.location.href = 'ind.7.html'">
+                            <span class="menIcon" id = "backIcon">
+                                    <i class="fa fa-angle-left "></i>
+                                  </span>
+                              
+                                
+                         </span></div>
+                        <div class="col-md-6  text-right align-self-right"><span class = "men"  onclick="window.location.href = '../text2.html'">
+                            <span class=" menIcon" id = "menIcon">
+                                    <i class="fa fa-angle-right"></i>
+                                  </span>
+                              
+                            
+                         </span></div>
+                        
+                        
+            </div>
+            <div class="row mt-5">
+                <span style="color:silver">[32]"Self-Portrait with Seven Fingers," Self-Portrait with Seven Fingers by Marc Chagall, , accessed May 16, 2019, http://www.marcchagall.co.uk/self-portrait-with-seven-fingers/.</span>
+                <span style="color:silver">[33] Waldemar George, “The School of Paris”,  in  Jewish Art, Roth Cecil Massadah- P.E.C Press, 1961. 652 </span>
+                <span style="color:silver">[34]Grrr.nl. "L'autoportrait Aux Sept Doigts - Marc Chagall." Marc Chagall - Stedelijk Museum Amsterdam. Accessed May 16, 2019. https://www.stedelijk.nl/en/collection/15590-marc-chagall-l'autoportrait-aux-sept-doigts.</span>
+                <span style="color:silver">[35]Self-Portrait with Seven Fingers, 1912-13 by Marc Chagall. Accessed May 16, 2019. https://www.marcchagall.net/self-portrait-with-seven-fingers.jsp.</span>
+                <span style="color:silver">[36]Self-Portrait with Seven Fingers, 1912-13 by Marc Chagall. Accessed May 16, 2019. https://www.marcchagall.net/self-portrait-with-seven-fingers.jsp.</span>
+                <span style="color:silver">[37]CBS News. "The Art of Marc Chagall." CBS News. May 07, 2017. Accessed May 16, 2019. https://www.cbsnews.com/pictures/the-art-of-marc-chagall/5/.</span>
+
+
+                
+
+             </div>
+        </div>
+
+    </div>
+
+  
+   <p></p>
+  
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  window.onload = function () {
+var k = '',show ='' ;
+   var x = document.createElement("STYLE");
+var imgs = document.querySelectorAll('.image-wrapper > div');
+var imgs_int = document.querySelectorAll('.image-wrapper > div > img')[0];
+   for (var i =0;  i < imgs.length; i++) {
+var show = imgs[i].getAttribute("data-shx-img");
+ 
+k += "."+imgs[i].className+":after  { background-image:url('"+show+"'); left:var(--imagen-X);     position: absolute;    display: block;    z-index: -1;    width: 90%;   height: 90%;  content: '';      background-size: 200% 80%;    background-position: 0% 100%;     } "  ;   
+
+   };
+    var t = document.createTextNode(k);
+    x.appendChild(t);
+    document.head.appendChild(x);
+      }
+
+  function relMouseCoords(event,el){
+    var totalOffsetX = 0;
+    var totalOffsetY = 0;
+    var canvasX = 0;
+    var canvasY = 0;
+    var currentElement = el;
+
+    do{
+        totalOffsetX += currentElement.offsetLeft - currentElement.scrollLeft;
+        totalOffsetY += currentElement.offsetTop - currentElement.scrollTop;
+    }
+    while(currentElement = currentElement.offsetParent)
+
+    canvasX = event.pageX - totalOffsetX;
+    canvasY = event.pageY - totalOffsetY;
+el.style.transform = " perspective( 600px ) rotateX("+((canvasY*-1)+((canvasY+5)/1.02))+"deg )  rotateY("+(canvasX-(canvasX/1.02))+"deg ) ";  
+  
+el.style.setProperty('--imagen-X', ((canvasX*-1)+((canvasX+10)/1.02))+"%");
+    el.style.setProperty('--Y-imagen', ((canvasY*-1)+((canvasY+20)/1.04))+"%");
+ }
+  
+  
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

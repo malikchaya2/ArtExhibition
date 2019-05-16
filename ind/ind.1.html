@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+ <title>Image</title>
+ <style>
+:root {  --X-imagen: 5%;
+ --Y-imagen:0%;
+}
+
+* {
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+}
+
+body { background-color: #fafafa; }
+
+.container {
+  position: relative;
+  width: 100%;
+  margin-top: 150px;
+}
+
+h1 {
+  font-weight: 200;
+  font-family: 'Roboto';
+  color: #444;
+  margin-bottom: 50px;
+}
+
+p {
+  font-family: 'Roboto';
+  color: #777;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.image-wrapper {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.clear_fix {
+  position: relative;
+  float: left;
+  width: 100% !important;
+}
+
+div[data-shx-size='1'] {  --Y-imagen:10%;
+}
+
+div[data-shx-size='1']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+}
+
+div[data-shx-size='2'] { margin-bottom: 12px !important; --Y-imagen:12%;
+}
+
+div[data-shx-size='2']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+}
+
+div[data-shx-size='3'] { margin-bottom: 17px !important; --Y-imagen:13%;
+}
+
+div[data-shx-size='3']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(25px);
+  filter: blur(25px);
+}
+
+div[data-shx-size='4'] { margin-bottom: 20px !important; --Y-imagen:18px;
+}
+
+div[data-shx-size='4']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+
+div[data-shx-size='5'] { margin-bottom: 28px !important; --Y-imagen:26px;
+}
+
+div[data-shx-size='5']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(32px);
+  filter: blur(30px);
+}
+
+div[data-shx-size='6'] { margin-bottom: 42px !important;  --Y-imagen:40px;
+}
+
+div[data-shx-size='6']:after {
+  top: var(--Y-imagen);
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+}
+
+.image-wrapper img {
+  width: 100%;
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.image-wrapper > div {
+  position: relative;
+  width: 500px;
+  margin: 10% auto;
+  margin-top: 0px;
+}
+.fa-bars{
+  padding-top: 20px; 
+  padding-right: 20px; 
+  z-index: 20;
+}
+.fa-arrow-left{
+  padding-top: 20px; 
+  padding-left: 20px; 
+  z-index: 20;
+}
+.menIcon{
+    font-size: 40px; 
+    color: grey; 
+  }
+
+</style>
+ </head>
+
+ <body>
+ <!-- <div id="css-script-menu">
+  <div class="css-script-center"> -->
+    <!-- <ul>
+      <li><a href="http://www.cssscript.com/interactive-image-shadow-perspective-effects-js-css/">Download</a></li>
+      <li><a href="http://www.cssscript.com/">Back To CSS Script</a></li>
+    </ul> -->
+    
+
+
+
+<div class="container">
+    <div class="row">
+            <h1> The Second Temple- Beit HaMikdash HaSheni </h1>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="image-wrapper">
+                <div class="my-image"  onmousemove="relMouseCoords(event,this)" data-shx-img="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Jerus-n4i.jpg/1280px-Jerus-n4i.jpg" data-shx-size="6" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Jerus-n4i.jpg/1280px-Jerus-n4i.jpg" class="imagen_ejemplo" alt="" /> </div>
+              </div>
+              
+    <div class="copy">
+      <i class="fab fa-creative-commons-pd"></i>
+      <a class="mw-mmv-license" href="https://commons.wikimedia.org/wiki/File:Jerus-n4i.jpg" target="">Public Domain</a>
+  </div>
+           
+        </div>
+        <div class="col-6">
+                <p><p>Close up of the temple in the <a href="https://en.wikipedia.org/wiki/Holyland_Model_of_Jerusalem" class="extiw" title="w:Holyland Model of Jerusalem">Holyland Model of Jerusalem</a>
+                </p>
+                <a href="https://commons.wikimedia.org/wiki/File:Jerus-n4i.jpg">[more]</a> </p>
+                The Second Temple (the Second Beit Hamikdash) was built approximately  69 years before the Parthenon <sup>9</sup>, and replaced Solomon’s temple which was destroyed in 587 BC. The Second Temple was not as beautiful as the first Temple, as described in Ezra 3:12, “And many of the priests and the Levites and the heads of the fathers' houses, old men who had seen the first Temple when its foundation was laid, [when they saw] this Temple with their eyes, were weeping with a loud voice, and many with a shout of joy to raise [their] voice.”<sup>10 </sup>  Yet, the building was a majestic site with many grand architectural elements including many pillars, gates, steps, chambers,<sup>11 </sup> an entrance hall, elaborate doorways, and the inner sanctuary, the Kodesh HaKodashim (the Holy of Holies), which only the high priest was allowed to enter once a year<sup>12 </sup>. The Beit Hamikdash housed many holy vessels including the altar for the incense offering, the Menorah, and the table (for the showbread)<sup>13 </sup>. Jews made the pilgrimage to the Temple three times a year, on the holidays of  Passover, Shavuot and Sukkot <sup>14 </sup> <sup>15 </sup>. 
+
+
+        </div>
+
+    </div>
+    <div class="row">
+
+            <div class="col-md-6  text-left align-self-left"><span class = "men" id="backbutton"  onclick="window.location.href = '../gallery.html'">
+                    <span class="menIcon" id = "backIcon">
+                            <i class="fa fa-angle-left "></i>
+                          </span>
+                      
+                        
+                 </span></div>
+                <div class="col-md-6  text-right align-self-right"><span class = "men"  onclick="window.location.href = 'ind.2.html'">
+                    <span class=" menIcon" id = "menIcon">
+                            <i class="fa fa-angle-right"></i>
+                          </span>
+                      
+                    
+                 </span></div>
+                
+                
+    </div>
+    <div class="row mb-5">
+      <span style="color:silver">[9] Construction started on the parthenon on 447 BC, and construction started on the second on 516 BC temple </span>
+      <span style="color:silver">    10] "Ezra - Chapter 3," Chabad.org, , accessed May 16, 2019, https://www.chabad.org/library/bible_cdo/aid/16500/jewish/Chapter-3.htm.</span>
+      <span style="color:silver">[11]Chabad.org, "Yechezkel - Ezekiel - Chapter 40," Chabad.org, August 03, 2016, , accessed May 16, 2019, https://www.chabad.org/library/article_cdo/aid/3395715/jewish/Chapter-40.htm.
+        </span>
+      <span style="color:silver">[12] Chabad.org, "The Holy of Holies: Kodesh HaKodashim," Chabad.org, June 29, 2004, , accessed May 16, 2019, https://www.chabad.org/library/article_cdo/aid/144745/jewish/The-Holy-of-Holies.htm.
+        </span>
+      <span style="color:silver">[13] Eliyahu Touger, "Beit Habechirah - Chapter 1," Chabad.org, October 12, 2009, , accessed May 16, 2019, https://www.chabad.org/library/article_cdo/aid/1007194/jewish/Beit-Habechirah-Chapter-1.htm. (vuv) 
+        </span>
+      <span style="color:silver">[14] Mendy Kaminker, "The Showbread: The How and Why of the Temple Bread Offering," Chabad.org, June 11, 2015, , accessed May 16, 2019, https://www.chabad.org/library/article_cdo/aid/2974301/jewish/The-Showbread-The-How-and-Why-of-the-Temple-Bread-Offering.htm.
+        </span>
+      <span style="color:silver"> [15]The Parthenon, once a thriving religious site, currently sits in ruins and is seen today as a purely historical representation of the past. In comparison, the remains of the Second Temple (the Second Beit Hamikdash) - the Western Wall - still serve as an active religious sight where many come to pray. 
+        </span>
+      <span style="color:silver"></span>
+
+
+     
+
+    </div>
+  
+   <p></p>
+  
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  window.onload = function () {
+var k = '',show ='' ;
+   var x = document.createElement("STYLE");
+var imgs = document.querySelectorAll('.image-wrapper > div');
+var imgs_int = document.querySelectorAll('.image-wrapper > div > img')[0];
+   for (var i =0;  i < imgs.length; i++) {
+var show = imgs[i].getAttribute("data-shx-img");
+ 
+k += "."+imgs[i].className+":after  { background-image:url('"+show+"'); left:var(--imagen-X);     position: absolute;    display: block;    z-index: -1;    width: 90%;   height: 90%;  content: '';      background-size: 200% 80%;    background-position: 0% 100%;     } "  ;   
+
+   };
+    var t = document.createTextNode(k);
+    x.appendChild(t);
+    document.head.appendChild(x);
+      }
+
+  function relMouseCoords(event,el){
+    var totalOffsetX = 0;
+    var totalOffsetY = 0;
+    var canvasX = 0;
+    var canvasY = 0;
+    var currentElement = el;
+
+    do{
+        totalOffsetX += currentElement.offsetLeft - currentElement.scrollLeft;
+        totalOffsetY += currentElement.offsetTop - currentElement.scrollTop;
+    }
+    while(currentElement = currentElement.offsetParent)
+
+    canvasX = event.pageX - totalOffsetX;
+    canvasY = event.pageY - totalOffsetY;
+el.style.transform = " perspective( 600px ) rotateX("+((canvasY*-1)+((canvasY+5)/1.02))+"deg )  rotateY("+(canvasX-(canvasX/1.02))+"deg ) ";  
+  
+el.style.setProperty('--imagen-X', ((canvasX*-1)+((canvasX+10)/1.02))+"%");
+    el.style.setProperty('--Y-imagen', ((canvasY*-1)+((canvasY+20)/1.04))+"%");
+ }
+  
+  
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
